@@ -1,0 +1,45 @@
+# Marianel Liga
+# PS 1394330
+# Zylab 5.19
+
+print("Davy's auto shop services")
+print("Oil change -- $35")
+print("Tire rotation -- $19")
+print("Car wash -- $7")
+print("Car wax -- $12")
+Service_1=input("\nSelect first service:\n")
+Service_2=input("Select second service:\n")
+totalServiceAmount=0
+print("\nDavy's auto shop invoice\n")
+#checking first service
+if(Service_1.lower()=="oil change"):
+    print("Service 1: Oil change, $35")
+    totalServiceAmount=totalServiceAmount+35
+elif(Service_1.lower()=="tire rotation"):
+    print("Service 1: Tire rotation, $19")
+    totalServiceAmount=totalServiceAmount+19
+elif(Service_1.lower()=="car wash"):
+    print("Service 1: Car wash, $7")
+    totalServiceAmount=totalServiceAmount+7
+elif(Service_1.lower()=="car wax"):
+    print("Service 1: Car wax, $12")
+    totalServiceAmount=totalServiceAmount+12
+elif(Service_1=="-"):
+    print("Service 1: No service")
+
+if(Service_2.lower()=="oil change"):
+    print("Service 2 Oil change, $35")
+    totalServiceAmount=totalServiceAmount+35
+elif(Service_2.upper()=="tire rotation"):
+    print("Service 2: Tire rotation, $19")
+    totalServiceAmount=totalServiceAmount+19
+elif(Service_2.lower()=="car wash"):
+    print("Service 2: Car wash, $7")
+    totalServiceAmount=totalServiceAmount+7
+elif(Service_2.lower()=="car wax"):
+    print("Service 2: Car wax, $12")
+    totalServiceAmount=totalServiceAmount+12
+elif(Service_2=="-"):
+    print("Service 2: No service")
+print('')
+print("Total: $%d" % totalServiceAmount)
