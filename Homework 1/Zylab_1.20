@@ -1,0 +1,16 @@
+#Marianel Liga
+# PS: 1394330
+#Zylab 1.20
+user_num1 = int(input("Enter integer:\n"))
+print("You entered:",user_num1)
+
+num_cube = user_num1 * user_num1 * user_num1
+num_sq = user_num1 * user_num1
+print(user_num1,"squared is",num_sq)
+print("And", user_num1, "cubed is",num_cube,"!!")
+
+user_num2 = int(input("Enter another integer:\n"))
+sum_num = user_num1 + user_num2
+prod_num = user_num1 * user_num2
+print(user_num1,"+",user_num2, "is",sum_num)
+print(user_num1,"*",user_num2, "is",prod_num)
