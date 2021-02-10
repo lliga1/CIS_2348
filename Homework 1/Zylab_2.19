@@ -1,0 +1,31 @@
+#Marianel Liga
+# PS: 1394330
+# ZyLab 2.19
+
+user_lj = float(input("Enter amount of lemon juice (in cups):\n"))
+user_w = float(input("Enter amount of water (in cups):\n"))
+user_an = float(input("Enter amount of agave nectar (in cups):\n"))
+user_serve = float(input("How many servings does this make?\n"))
+print('')
+
+print("Lemonade ingredients - yields",str('{:.2f}'.format(user_serve)),"servings")
+print(str('{:.2f}'.format(user_lj))+' cup(s) lemon juice')
+print(str('{:.2f}'.format(user_w))+' cup(s) water')
+print(str('{:.2f}'.format(user_an))+' cup(s) agave nectar')
+print("")
+
+user_serve_2 = float(input("How many servings would you like to make?\n"))
+print('')
+compute_serve_2 = user_serve_2/user_serve
+new_lj = user_lj * compute_serve_2
+new_w = user_w * compute_serve_2
+new_aj = user_an * compute_serve_2
+print('Lemonade ingredients - yields '+str('{:.2f}'.format(user_serve_2))+' servings')
+print(str('{:.2f}'.format(new_lj))+' cup(s) lemon juice')
+print(str('{:.2f}'.format(new_w))+' cup(s) water')
+print(str('{:.2f}'.format(new_aj))+' cup(s) agave nectar')
+print("")
+print('Lemonade ingredients - yields '+str('{:.2f}'.format(user_serve_2))+' servings')
+print(str('{:.2f}'.format(new_lj/16))+' gallon(s) lemon juice')
+print(str('{:.2f}'.format(new_w/16))+' gallon(s) water')
+print(str('{:.2f}'.format(new_aj/16))+' gallon(s) agave nectar')
