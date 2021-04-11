@@ -113,7 +113,7 @@ your_item = []
 while (user_manuf != "q"):
     for x in range(0, len(final_list)):
         if user_manuf in final_list[x] and user_type in final_list[x]:
-        your_item.append(final_list[x])
+          your_item.append(final_list[x])
 
 # If nothing was added to the list that means the product does not exist
     if len(your_item) != 0:
